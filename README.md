@@ -1,4 +1,4 @@
-# Detecção de Anomalia em Séries Temporais
+# Detecção de Anomalia
 ## Scripts desenvolvidos para palestras sobre Anomalias
 
 ### Índice
