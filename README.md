@@ -5,8 +5,7 @@
   
 - [Anomalia Pontual e/ou Global](#anomalia-pontual-global)
 - [Anomalia em Séries Temporais](#anomalia-timeseries)
-  - [Análise Exploratória](#analise-exploratoria)
-  - [Pré processamento](#pre-processamento)
+  - [Análise Exploratória](#analise-exploratoria-processamento)
   - [Modelos](#modelos)
 
 ## 
@@ -19,46 +18,30 @@
 
 <h2 id="anomalia-timeseries">
   
-[Anomalia em Séries Temporais](https://github.com/manoelakohler/DataMining/tree/main/01_An%C3%A1liseExplorat%C3%B3ria)
+[Anomalia em Séries Temporais](https://github.com/FelipeBorgesC/anomaly-detection-bi/tree/main/Anomaly%20-%20Timeseries)
   
 </h2>
 
-Abaixo está organizado todas as etapas necessárias para a criação de um Detector de Anomalias para Séries Temporais, desde a análise crítica dos dados brutos, passando pelos processos necessários para organização e préprocessamento dos dados, até o treinamento dos modelos e a otimização de seus parâmetros. 
+Abaixo está organizado todas as etapas necessárias para a criação de um Detector de Anomalias em Séries Temporais, desde a análise crítica dos dados brutos, passando pelos processos necessários para organização e pré-processamento dos dados, até o treinamento dos modelos e a otimização de seus parâmetros. Diferentemente da abordagem de detecção de anomalias em registros pontuais ou globais, quando o detector deve levar em consideração a evolução temporal de determinada grandeza, é necessário realizar alguns procedimentos adicionais. Além disso, assim como nos casos de previsão de séries temporais, a etapa mais importante e mais delicada do processo é no momento da organização da base de dados. Definir as taxas de amostragens para criação dos *batches* é crucial para um treinamento adequado dos modelos.
 
-<h3 id="analise-exploratoria">
+<h3 id="analise-exploratoria-processamento">
   
 [Análise Exploratória](https://github.com/manoelakohler/DataMining/tree/main/01_An%C3%A1liseExplorat%C3%B3ria)
   
 </h3>
 
-  - **Mushrooms:** Entendimento e classificação de uma base de cogumelos [`mushrooms.ipynb`](https://github.com/manoelakohler/DataMining/blob/main/01_An%C3%A1liseExplorat%C3%B3ria/mushroom.ipynb). A base é composta por amostras de 23 espécies de cogumelos. Cada espécie é identificada como definitivamente comestível, definitivamente venenosa, ou de consumo desconhecido e não recomendado. Esta última classe foi combinada com a venenosa. O guia (de onde foram retiradas as características dos cogumelos) afirma claramente que não existe uma regra simples para determinar a comestibilidade de um cogumelo.
-    - Gráficos analisados
-      - Boxplots
-      - Gráficos de dispersão
-      - Gráficos de barras
-      - Histogramas
-      - entre outros
-    - Inferência
-      - Árvore de decisão (classificação)
+  - **Leitura de sensores:** Análise e Processamento Leitura de sensores [`Analise_Preprocessamento.ipynb`](https://github.com/FelipeBorgesC/anomaly-detection-bi/blob/main/Anomaly%20-%20Timeseries/Analise_Preprocessamento.ipynb). A base de dados utilizada para exemplificação desse case é do [dataset 3W](https://github.com/ricardovvargas/3w_dataset) sendo composto por inúmeros arquivos de leitura de sensores já rotulados com classes de eventos. Para o estudo de aula, o foco foi apenas sobre 1 único arquivo para exemplificar o passo a passo de um problema de detecção de anomalias em séries temporais. Nessa etapa o objetivo foi explicar as etapas de análise dos dados do problema e aplicar as diversas etapas de pré processamento necessários em séries temporais.
+    - Análise dos dados
+      - Comportamento classe de saída
+      - Amostragem mínima/máxima
+      - Quantidade de atributos
+    - Processamento
+      - Retirada de colunas nulas
+      - Checagem de amostragem mínima
+      - Organizar base em formato padrão
+      - Extrair *features* com a biblioteca *tsfresh*
+      - Armazenar em um arquivo
 
-
-<h3 id="pre-processamento">
-  
-[Pré processamento](https://github.com/manoelakohler/DataMining/tree/main/02_Pr%C3%A9Processamento)
-  
-</h3>
-
-  - **Secom:** Entendimento, pré processamento e classificação de uma base de um processo de fabricação de semi-condutores [`Secom.ipynb`](https://github.com/manoelakohler/DataMining/blob/main/02_Pr%C3%A9Processamento/Secom.ipynb). Um complexo processo de fabricação de semi-condutores moderno é normalmente feito sob vigilância consistente através do monitoramento de sinais, variáveis coletadas de sensores e pontos de medição de processo. No entanto, nem todos estes sinais são igualmente valiosos num sistema de monitoramento específico. Os sinais medidos contêm uma combinação de informações úteis, informações irrelevantes, bem como ruído. Engenheiros tipicamente têm um número muito maior de sinais do que são realmente necessários. Se considerarmos cada tipo de sinal como uma característica, então a seleção da característica pode ser aplicada para identificar os sinais mais relevantes. Os Engenheiros de Processo podem então usar estes sinais para determinar os fatores chave para o processo de produção. Isso poderá trazer benefícios para o processo, como redução do tempo e diminuição nos custos de produção.
-  
-    - Gráficos e medidas resumo para análise exploratória      
-    - Pré processamento
-      - Tratamento de missing
-      - Remoção de atributos com variância zero
-      - Balanceamento da base de dados
-      - Normalização
-      - PCA
-    - Inferência
-      - SVM (classificação)
 
 <h3 id="modelos">
   
