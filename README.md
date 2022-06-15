@@ -26,7 +26,7 @@ Abaixo está organizado todas as etapas necessárias para a criação de um Dete
 
 <h3 id="analise-exploratoria-processamento">
   
-[Análise Exploratória](https://github.com/manoelakohler/DataMining/tree/main/01_An%C3%A1liseExplorat%C3%B3ria)
+[Análise Exploratória e Processamento](https://github.com/manoelakohler/DataMining/tree/main/01_An%C3%A1liseExplorat%C3%B3ria)
   
 </h3>
 
