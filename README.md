@@ -5,7 +5,7 @@
   
 - [Anomalia Pontual e/ou Global](#anomalia-pontual-global)
 - [Anomalia em Séries Temporais](#anomalia-timeseries)
-  - [Análise Exploratória](#analise-exploratoria-processamento)
+  - [Análise Exploratória e Processamento](#analise-exploratoria-processamento)
   - [Modelos](#modelos)
 
 ## 
