@@ -1,5 +1,5 @@
 # Detecção de Anomalia
-## Scripts desenvolvidos para palestras sobre Anomalias
+### Scripts desenvolvidos para as palestras sobre Anomalias
 
 ### Índice
   
