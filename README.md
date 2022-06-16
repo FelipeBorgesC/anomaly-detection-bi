@@ -30,7 +30,11 @@ Abaixo está organizado todas as etapas necessárias para a criação de um Dete
   
 </h3>
 
-  - **Leitura de sensores:** Análise e Processamento Leitura de sensores [`Analise_Preprocessamento.ipynb`](https://github.com/FelipeBorgesC/anomaly-detection-bi/blob/main/Anomaly%20-%20Timeseries/Analise_Preprocessamento.ipynb). A base de dados utilizada para exemplificação desse case é do [dataset 3W](https://github.com/ricardovvargas/3w_dataset) sendo composto por inúmeros arquivos de leitura de sensores já rotulados com classes de eventos. Para o estudo de aula, o foco foi apenas sobre 1 único arquivo para exemplificar o passo a passo de um problema de detecção de anomalias em séries temporais. Nessa etapa o objetivo foi explicar as etapas de análise dos dados do problema e aplicar as diversas etapas de pré processamento necessários em séries temporais.
+  - **Leitura de sensores:** Análise e Processamento Leitura de sensores [`Analise_Preprocessamento.ipynb`](https://github.com/FelipeBorgesC/anomaly-detection-bi/blob/main/Anomaly%20-%20Timeseries/Analise_Preprocessamento.ipynb). 
+    
+    A base de dados utilizada para exemplificação desse case é do [dataset 3W](https://github.com/ricardovvargas/3w_dataset) sendo composto por inúmeros arquivos de leitura de sensores já rotulados com classes de eventos. Para o estudo de aula, o foco foi apenas sobre 1 único arquivo para exemplificar o passo a passo de um problema de detecção de anomalias em séries temporais. Nessa etapa o objetivo foi explicar as etapas de análise dos dados do problema e aplicar as diversas etapas de pré processamento necessários em séries temporais.
+
+
     - Análise dos dados
       - Comportamento classe de saída
       - Amostragem mínima/máxima
@@ -49,7 +53,9 @@ Abaixo está organizado todas as etapas necessárias para a criação de um Dete
   
 </h3>
 
- - **Análise de Crédito Bancário:** Entendimento, pré processamento e classificação de uma base de análise de crédito [`Secom.ipynb`](https://github.com/manoelakohler/DataMining/blob/main/02_Pr%C3%A9Processamento/Secom.ipynb). A base de dados contém 2077 exemplos de créditos concedidos ou não. Possui 11 atributos de entrada e 2 classes de saída. A saída indica se o cliente pagou o empréstimo (=1) ou se não pagou (=0). 
+ - **Análise de Crédito Bancário:** Entendimento, pré processamento e classificação de uma base de análise de crédito [`Secom.ipynb`](https://github.com/manoelakohler/DataMining/blob/main/02_Pr%C3%A9Processamento/Secom.ipynb). 
+    
+    A base de dados contém 2077 exemplos de créditos concedidos ou não. Possui 11 atributos de entrada e 2 classes de saída. A saída indica se o cliente pagou o empréstimo (=1) ou se não pagou (=0). 
  
     - Medidas resumo para análise exploratória      
     - Pré processamento
