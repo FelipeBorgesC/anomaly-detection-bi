@@ -26,7 +26,7 @@ Abaixo está organizado todas as etapas necessárias para a criação de um Dete
 
 <h3 id="analise-exploratoria-processamento">
   
-[Análise Exploratória e Processamento](https://github.com/manoelakohler/DataMining/tree/main/01_An%C3%A1liseExplorat%C3%B3ria)
+[Análise Exploratória e Processamento](https://github.com/FelipeBorgesC/anomaly-detection-bi/tree/main/Anomaly%20-%20Timeseries)
   
 </h3>
 
@@ -49,11 +49,11 @@ Abaixo está organizado todas as etapas necessárias para a criação de um Dete
 
 <h3 id="modelos">
   
-[Modelos](https://github.com/manoelakohler/DataMining/tree/main/03_Classifica%C3%A7%C3%A3o)
+[Modelos](https://github.com/FelipeBorgesC/anomaly-detection-bi/tree/main/Anomaly%20-%20Timeseries)
   
 </h3>
 
- - **Análise de Crédito Bancário:** Entendimento, pré processamento e classificação de uma base de análise de crédito [`Secom.ipynb`](https://github.com/manoelakohler/DataMining/blob/main/02_Pr%C3%A9Processamento/Secom.ipynb). 
+ - **Análise de Crédito Bancário:** Entendimento, pré processamento e classificação de uma base de análise de crédito [`Secom.ipynb`](https://github.com/FelipeBorgesC/anomaly-detection-bi/blob/main/Anomaly%20-%20Timeseries/Modelos.ipynb). 
     
     A base de dados contém 2077 exemplos de créditos concedidos ou não. Possui 11 atributos de entrada e 2 classes de saída. A saída indica se o cliente pagou o empréstimo (=1) ou se não pagou (=0). 
  
