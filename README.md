@@ -4,6 +4,7 @@
 ### Índice
   
 - [Anomalia Pontual e/ou Global](#anomalia-pontual-global)
+  - [Análise, processamento e modelo em Dados Pontuais](#analise-processamento-modelo)
 - [Anomalia em Séries Temporais](#anomalia-timeseries)
   - [Análise Exploratória e Processamento](#analise-exploratoria-processamento)
   - [Modelos](#modelos)
@@ -12,9 +13,29 @@
 
 <h2 id="anomalia-pontual-global">
   
-[Anomalia Pontual e/ou Global](https://github.com/manoelakohler/DataMining/tree/main/01_An%C3%A1liseExplorat%C3%B3ria)
+[Anomalia Pontual e/ou Global](https://github.com/FelipeBorgesC/anomaly-detection-bi/tree/main/Anomaly%20-%20Global)
   
 </h2>
+
+Nesta seção é apresentado todas as etapas para desenvolvimento de um Detector de Anomalia pontual. A primeira etapa consiste em visualizar a quantidade de classes existentes no problema, executar o preprocessamento necessário e em seguida o treinamento do modelo.
+
+<h3 id="analise-processamento-modelo">
+  
+[Análise, processamento e modelo em Dados Pontuais](https://github.com/FelipeBorgesC/anomaly-detection-bi/blob/main/Anomaly%20-%20Global/AnomalyDetection.ipynb)
+  
+</h3>
+
+- **Análise, preprocessamento e modelo:** Carregamento do dataset, analisar o seu comportamento e treinamento do modelo [`AnomalyDetection.ipynb`](https://github.com/FelipeBorgesC/anomaly-detection-bi/blob/main/Anomaly%20-%20Global/AnomalyDetection.ipynb). 
+    
+    A base de dados trata-se de um conjunto de amostras de exames de eletrocardiograma. E, nessa base, os dados estão rotulados como normais e anômalos e, apesar dos dados serem de um período de tempo sequencial, a avaliação de anomalia ocorre de uma sequência de tamanho fixo e para uma mesma janela de amostragem. Inicialmente é feita uma análise da base, tanto o tamanho dessa janela de amostragem quanto a quantidade de registros normais e de anomalia. Em seguida é aplicado a normalização desses dados e o treinamento do modelo. Por fim, é executada a avaliação do modelo treinado e os resultados quantitativos. 
+ 
+    - Análise da base de dados
+      - Visualização gráfica
+      - Exibição da quantidade de registros por classe
+    - Preprocessamento dos dados
+    - Treinamento do modelo
+    - Avaliação do modelo
+
 
 <h2 id="anomalia-timeseries">
   
@@ -26,7 +47,7 @@ Abaixo está organizado todas as etapas necessárias para a criação de um Dete
 
 <h3 id="analise-exploratoria-processamento">
   
-[Análise Exploratória e Processamento](https://github.com/FelipeBorgesC/anomaly-detection-bi/tree/main/Anomaly%20-%20Timeseries)
+[Análise Exploratória e Processamento](https://github.com/FelipeBorgesC/anomaly-detection-bi/tree/main/Anomaly%20-%20Timeseries/An%C3%A1lise%20e%20preprocessamento)
   
 </h3>
 
@@ -49,20 +70,15 @@ Abaixo está organizado todas as etapas necessárias para a criação de um Dete
 
 <h3 id="modelos">
   
-[Modelos](https://github.com/FelipeBorgesC/anomaly-detection-bi/tree/main/Anomaly%20-%20Timeseries)
+[Modelos](https://github.com/FelipeBorgesC/anomaly-detection-bi/tree/main/Anomaly%20-%20Timeseries/Modelo)
   
 </h3>
 
- - **Análise de Crédito Bancário:** Entendimento, pré processamento e classificação de uma base de análise de crédito [`Secom.ipynb`](https://github.com/FelipeBorgesC/anomaly-detection-bi/blob/main/Anomaly%20-%20Timeseries/Modelos.ipynb). 
+ - **Modelos:** Carregamento do dataset processado e testagem de variados modelos [`Modelos.ipynb`](https://github.com/FelipeBorgesC/anomaly-detection-bi/blob/main/Anomaly%20-%20Timeseries/Modelo/Modelos.ipynb). 
     
-    A base de dados contém 2077 exemplos de créditos concedidos ou não. Possui 11 atributos de entrada e 2 classes de saída. A saída indica se o cliente pagou o empréstimo (=1) ou se não pagou (=0). 
+    Com a base de dados já processada são testados diversos modelos para a detecção dos momentos de anomalia.
  
-    - Medidas resumo para análise exploratória      
-    - Pré processamento
-      - Normalização
-    - Inferência (classificação)
-      - SVM
-      - Árvore de Decisão
-      - Random Forest
-    - Tuning de hiperparâmetros
-      - GridSearch
+    - Modelos
+      - Autoencoder simples
+      - Autoencoder + SVC
+      - Variational Autoencoder
